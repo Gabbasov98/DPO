@@ -37,7 +37,7 @@
                         <div class="menu__content">
                             <div class="global-search">
                                 <fieldset class="global-search__field">
-                                    <input type="text" placeholder="Название курса, шифр, направление, специальность" data-placeholder="Название курса, шифр, направление, специальность" data-placeholder2="Поиск">
+                                    <input type="text" placeholder="@@placeholder" data-placeholder="@@placeholder" data-placeholder2="Поиск">
                                     <img class="global-search__icon" src="img/search-icon.svg" alt="">
                                     <button class="global-search__clear">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -342,6 +342,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="" class="nav__link m-btn m-btn-line _hide-desktop">
+                                    <span>Версия для слабовидящих</span>
+                                </a>
                             </nav>
                         </div>
 
@@ -463,325 +466,329 @@
                                         <img src="img/close.svg" alt="">
                                     </button>
                                 </div>
-                                <div class="filter-info">
-                                    <div class="filter-info__top">
-                                        <div class="text28 semi-bold-text">
-                                            Фильтры
+                                <div class="filter__scroll">
+                                    <div class="filter-info">
+                                        <div class="filter-info__top">
+                                            <div class="text28 semi-bold-text">
+                                                Фильтры
+                                            </div>
+                                            <div class="badge _big">
+                                                <span class="text16">3</span>
+                                            </div>
                                         </div>
-                                        <div class="badge _big">
-                                            <span class="text16">3</span>
+
+                                        <div class="text16 gray70-text">
+                                            Нет примененных фильтров
                                         </div>
+
+
                                     </div>
 
-                                    <div class="text16 gray70-text">
-                                        Нет примененных фильтров
+                                    <div class="filter__content">
+                                        <div class="filter-group">
+                                            <div class="filter-group__top _open-sub-filter">
+                                                <div class="text20 semi-bold-text">
+                                                    Направления
+                                                </div>
+                                            </div>
+                                            <div class="sub-filter">
+                                                <div class="sub-filter__top">
+                                                    <button class="sub-filter__back m-btn m-btn-secondary">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path opacity="0.2" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" fill="#007DB6" />
+                                                            <path class="_stroke" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#007DB6" stroke-miterlimit="10" />
+                                                            <path class="_stroke" d="M9 5.75L6.5 8L9 10.25" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span>К фильтрам</span>
+                                                    </button>
+                                                    <button class="close-btn _toggle-filter">
+                                                        <img src="img/close.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="sub-filter__content">
+                                                    <div class="local-search">
+                                                        <fieldset class="local-search__field fg">
+                                                            <input type="text" placeholder="Поиск" data-placeholder="Поиск" data-placeholder2="Поиск">
+                                                            <img class="local-search__icon" src="img/search-icon.svg" alt="">
+                                                            <button class="local-search__clear">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="_fill" opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
+                                                                    <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-width="2" stroke-miterlimit="10" />
+                                                                    <path class="_stroke" d="M15 9L9 15" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path class="_stroke" d="M15 15L9 9" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                            </button>
+
+                                                        </fieldset>
+
+                                                        <div class="local-search__results">
+                                                            <div class="local-search__item">
+                                                                <div class="text18">Дополнительное образование и внеурочная деятельность детей</div>
+                                                            </div>
+                                                            <div class="local-search__item">
+                                                                <div class="text18">Дошкольное образование</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="filter-group__checks _hide-checks">
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Воспитательная работа</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Государственная итоговая аттестация (9 и 11 кл.)</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Дополнительное образование и внеурочная деятельность детей</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Дошкольное образование</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Духовно-нравственное воспитание, ОРКСЭ</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Естественнонаучная грамотность</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Информационно-коммуникационные технологии</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Искусство (музыка, МХК, ИЗО)</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <button class="filter-group__more m-btn m-btn-text">
+                                                        <span class="_view1">Еще 47 направлений</span>
+                                                        <span class="_view2">Скрыть</span>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
+                                                            <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-miterlimit="10" />
+                                                            <path class="_stroke" d="M15.375 10.875L12 14.625L8.625 10.875" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter-group">
+                                            <div class="filter-group__top _open-bottom-filter">
+                                                <div class="text20 semi-bold-text">
+                                                    Стоимость
+                                                </div>
+                                            </div>
+                                            <div class="filter-group__bottom">
+                                                <div class="filter-group__checks">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Бюджетный</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Городская субсидия</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Платный</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-slider" data-start="1000" data-start2="71945" data-min="0" data-max="71945">
+                                                    <div class="filter-slider__item">
+                                                        <div class="range-slider"></div>
+                                                    </div>
+                                                    <div class="filter-slider__inputs">
+                                                        <div class="fg">
+                                                            <label>от</label>
+                                                            <input class="range-slider__input1" min="0" max="71945" type="number">
+                                                        </div>
+                                                        <div class="fg">
+                                                            <label>до</label>
+                                                            <input class="range-slider__input2" min="0" max="71945" type="number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="filter-group">
+                                            <div class="filter-group__top _open-bottom-filter">
+                                                <div class="text20 semi-bold-text">
+                                                    Длительность, часов
+                                                </div>
+                                            </div>
+                                            <div class="filter-group__bottom">
+                                                <div class="filter-group__checks">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>16-32</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>32-76</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>76-168</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>168-320</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>более 320</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter-group">
+                                            <div class="filter-group__top _open-bottom-filter">
+                                                <div class="text20 semi-bold-text">
+                                                    Форма обучения
+                                                </div>
+                                            </div>
+                                            <div class="filter-group__bottom">
+                                                <div class="filter-group__checks">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Очная</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Дистанционная</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Очно-заочная</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Очная с ДОТ</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Очно-заочная с ДОТ</span></label>
+                                                    </div>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Заочная с ДОТ</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter-group">
+                                            <div class="filter-group__top _open-sub-filter">
+                                                <div class="text20 semi-bold-text">
+                                                    Организатор
+                                                </div>
+                                            </div>
+                                            <div class="sub-filter">
+                                                <div class="sub-filter__top">
+                                                    <button class="sub-filter__back m-btn m-btn-secondary">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path opacity="0.2" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" fill="#007DB6" />
+                                                            <path class="_stroke" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#007DB6" stroke-miterlimit="10" />
+                                                            <path class="_stroke" d="M9 5.75L6.5 8L9 10.25" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span>К фильтрам</span>
+                                                    </button>
+                                                    <button class="close-btn _toggle-filter">
+                                                        <img src="img/close.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="sub-filter__content">
+                                                    <div class="local-search">
+                                                        <fieldset class="local-search__field fg">
+                                                            <input type="text" placeholder="Поиск" data-placeholder="Поиск" data-placeholder2="Поиск">
+                                                            <img class="local-search__icon" src="img/search-icon.svg" alt="">
+                                                            <button class="local-search__clear">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="_fill" opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
+                                                                    <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-width="2" stroke-miterlimit="10" />
+                                                                    <path class="_stroke" d="M15 9L9 15" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path class="_stroke" d="M15 15L9 9" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                            </button>
+
+                                                        </fieldset>
+
+                                                        <div class="local-search__results">
+                                                            <div class="local-search__item">
+                                                                <div class="text18">Дополнительное образование и внеурочная деятельность детей</div>
+                                                            </div>
+                                                            <div class="local-search__item">
+                                                                <div class="text18">Дошкольное образование</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="filter-group__checks _hide-checks">
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>ГБУ «Городской психолого-педагогический центр» (ГППЦ)</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>ГАОУ ДПО «Московский центр качества образования» (МЦКО)</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>ГАОУ ДПО «Центр педагогического мастерства»</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>ГАОУ ВО «Московский городской педагогический университет»</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>ГБПОУ «Пищевой колледж № 33»</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Естественнонаучная грамотность</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Информационно-коммуникационные технологии</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>Искусство (музыка, МХК, ИЗО)</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <button class="filter-group__more m-btn m-btn-text">
+                                                        <span class="_view1">Еще 47 направлений</span>
+                                                        <span class="_view2">Скрыть</span>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
+                                                            <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-miterlimit="10" />
+                                                            <path class="_stroke" d="M15.375 10.875L12 14.625L8.625 10.875" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-
-
                                 </div>
 
-                                <div class="filter__content">
-                                    <div class="filter-group">
-                                        <div class="filter-group__top _open-sub-filter">
-                                            <div class="text20 semi-bold-text">
-                                                Направления
-                                            </div>
-                                        </div>
-                                        <div class="sub-filter">
-                                            <div class="sub-filter__top">
-                                                <button class="sub-filter__back m-btn m-btn-secondary">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path opacity="0.2" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" fill="#007DB6" />
-                                                        <path class="_stroke" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#007DB6" stroke-miterlimit="10" />
-                                                        <path class="_stroke" d="M9 5.75L6.5 8L9 10.25" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                    <span>К фильтрам</span>
-                                                </button>
-                                                <button class="close-btn _toggle-filter">
-                                                    <img src="img/close.svg" alt="">
-                                                </button>
-                                            </div>
-                                            <div class="sub-filter__content">
-                                                <div class="local-search">
-                                                    <fieldset class="local-search__field fg">
-                                                        <input type="text" placeholder="Поиск">
-                                                        <img class="local-search__icon" src="img/search-icon.svg" alt="">
-                                                        <button class="local-search__clear">
-                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="_fill" opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
-                                                                <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-width="2" stroke-miterlimit="10" />
-                                                                <path class="_stroke" d="M15 9L9 15" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path class="_stroke" d="M15 15L9 9" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </fieldset>
-
-                                                    <div class="local-search__results">
-                                                        <div class="local-search__item">
-                                                            <div class="text18">Дополнительное образование и внеурочная деятельность детей</div>
-                                                        </div>
-                                                        <div class="local-search__item">
-                                                            <div class="text18">Дошкольное образование</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="filter-group__checks _hide-checks">
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Воспитательная работа</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Государственная итоговая аттестация (9 и 11 кл.)</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Дополнительное образование и внеурочная деятельность детей</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Дошкольное образование</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Духовно-нравственное воспитание, ОРКСЭ</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Естественнонаучная грамотность</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Информационно-коммуникационные технологии</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Искусство (музыка, МХК, ИЗО)</span></label>
-                                                    </div>
-                                                </div>
-                                                <button class="filter-group__more m-btn m-btn-text">
-                                                    <span class="_view1">Еще 47 направлений</span>
-                                                    <span class="_view2">Скрыть</span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
-                                                        <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-miterlimit="10" />
-                                                        <path class="_stroke" d="M15.375 10.875L12 14.625L8.625 10.875" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter-group">
-                                        <div class="filter-group__top _open-bottom-filter">
-                                            <div class="text20 semi-bold-text">
-                                                Стоимость
-                                            </div>
-                                        </div>
-                                        <div class="filter-group__bottom">
-                                            <div class="filter-group__checks">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Бюджетный</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Городская субсидия</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Платный</span></label>
-                                                </div>
-                                            </div>
-                                            <div class="filter-slider" data-start="1000" data-start2="71945" data-min="0" data-max="71945">
-                                                <div class="filter-slider__item">
-                                                    <div class="range-slider"></div>
-                                                </div>
-                                                <div class="filter-slider__inputs">
-                                                    <div class="fg">
-                                                        <label>от</label>
-                                                        <input class="range-slider__input1" min="0" max="71945" type="number">
-                                                    </div>
-                                                    <div class="fg">
-                                                        <label>до</label>
-                                                        <input class="range-slider__input2" min="0" max="71945" type="number">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter-group">
-                                        <div class="filter-group__top _open-bottom-filter">
-                                            <div class="text20 semi-bold-text">
-                                                Длительность, часов
-                                            </div>
-                                        </div>
-                                        <div class="filter-group__bottom">
-                                            <div class="filter-group__checks">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>16-32</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>32-76</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>76-168</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>168-320</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>более 320</span></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter-group">
-                                        <div class="filter-group__top _open-bottom-filter">
-                                            <div class="text20 semi-bold-text">
-                                                Форма обучения
-                                            </div>
-                                        </div>
-                                        <div class="filter-group__bottom">
-                                            <div class="filter-group__checks">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Очная</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Дистанционная</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Очно-заочная</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Очная с ДОТ</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Очно-заочная с ДОТ</span></label>
-                                                </div>
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Заочная с ДОТ</span></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter-group">
-                                        <div class="filter-group__top _open-sub-filter">
-                                            <div class="text20 semi-bold-text">
-                                                Организатор
-                                            </div>
-                                        </div>
-                                        <div class="sub-filter">
-                                            <div class="sub-filter__top">
-                                                <button class="sub-filter__back m-btn m-btn-secondary">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path opacity="0.2" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" fill="#007DB6" />
-                                                        <path class="_stroke" d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#007DB6" stroke-miterlimit="10" />
-                                                        <path class="_stroke" d="M9 5.75L6.5 8L9 10.25" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                    <span>К фильтрам</span>
-                                                </button>
-                                                <button class="close-btn _toggle-filter">
-                                                    <img src="img/close.svg" alt="">
-                                                </button>
-                                            </div>
-                                            <div class="sub-filter__content">
-                                                <div class="local-search">
-                                                    <fieldset class="local-search__field fg">
-                                                        <input type="text" placeholder="Поиск">
-                                                        <img class="local-search__icon" src="img/search-icon.svg" alt="">
-                                                        <button class="local-search__clear">
-                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="_fill" opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
-                                                                <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-width="2" stroke-miterlimit="10" />
-                                                                <path class="_stroke" d="M15 9L9 15" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path class="_stroke" d="M15 15L9 9" stroke="#007DB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </fieldset>
-
-                                                    <div class="local-search__results">
-                                                        <div class="local-search__item">
-                                                            <div class="text18">Дополнительное образование и внеурочная деятельность детей</div>
-                                                        </div>
-                                                        <div class="local-search__item">
-                                                            <div class="text18">Дошкольное образование</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="filter-group__checks _hide-checks">
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>ГБУ «Городской психолого-педагогический центр» (ГППЦ)</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>ГАОУ ДПО «Московский центр качества образования» (МЦКО)</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>ГАОУ ДПО «Центр педагогического мастерства»</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>ГАОУ ВО «Московский городской педагогический университет»</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>ГБПОУ «Пищевой колледж № 33»</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Естественнонаучная грамотность</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Информационно-коммуникационные технологии</span></label>
-                                                    </div>
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label><span>Искусство (музыка, МХК, ИЗО)</span></label>
-                                                    </div>
-                                                </div>
-                                                <button class="filter-group__more m-btn m-btn-text">
-                                                    <span class="_view1">Еще 47 направлений</span>
-                                                    <span class="_view2">Скрыть</span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path opacity="0.2" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#007DB6" />
-                                                        <path class="_stroke" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#007DB6" stroke-miterlimit="10" />
-                                                        <path class="_stroke" d="M15.375 10.875L12 14.625L8.625 10.875" stroke="#007DB6" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter__nav">
-                                        <button class="m-btn m-btn-secondary _toggle-filter">
-                                            <span>Очистить</span>
-                                        </button>
-                                        <button class="m-btn m-btn-primary _toggle-filter">
-                                            <span>Применить</span>
-                                        </button>
-                                    </div>
+                                <div class="filter__nav">
+                                    <button class="m-btn m-btn-secondary _toggle-filter">
+                                        <span>Очистить</span>
+                                    </button>
+                                    <button class="m-btn m-btn-primary _toggle-filter">
+                                        <span>Применить</span>
+                                    </button>
                                 </div>
                             </div>
 
@@ -961,7 +968,7 @@
                             </fieldset>
 
                             <div class="courses__items grid-column2 grid-full-mob">
-                                <a href="" class="course-card">
+                                <div class="course-card m-card ">
                                     <div class="course-card__top">
                                         <div class="course-card__img">
                                             <img src="img/course.webp" alt="">
@@ -992,16 +999,24 @@
                 04868-22/23-Б-ЗД
             </span>
                                         </div>
-                                        <div class="course-card__title text20 semi-bold-text">
+                                        <a href="" class="course-card__title text20 semi-bold-text">
                                             Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                        </div>
+                                        </a>
                                         <div class="text20 gray70-text">
                                             Дополнительное образование и внеурочная деятельность детей
                                         </div>
                                     </div>
-                                </a>
+                                    <div class="card-nav">
+                                        <a href="" class="m-btn m-btn-text">
+                                            <span>Подробнее</span>
+                                        </a>
+                                        <a href="" class="m-btn m-btn-primary">
+                                            <span>Подать заявку</span>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <a href="" class="course-card">
+                                <div class="course-card m-card ">
                                     <div class="course-card__top">
                                         <div class="course-card__img">
                                             <img src="img/course2.webp" alt="">
@@ -1032,16 +1047,24 @@
                 04868-22/23-Б-ЗД
             </span>
                                         </div>
-                                        <div class="course-card__title text20 semi-bold-text">
+                                        <a href="" class="course-card__title text20 semi-bold-text">
                                             Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                        </div>
+                                        </a>
                                         <div class="text20 gray70-text">
                                             Дополнительное образование и внеурочная деятельность детей
                                         </div>
                                     </div>
-                                </a>
+                                    <div class="card-nav">
+                                        <a href="" class="m-btn m-btn-text">
+                                            <span>Подробнее</span>
+                                        </a>
+                                        <a href="" class="m-btn m-btn-primary">
+                                            <span>Подать заявку</span>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <a href="" class="course-card">
+                                <div class="course-card m-card ">
                                     <div class="course-card__top">
                                         <div class="course-card__img">
                                             <img src="img/course.webp" alt="">
@@ -1072,16 +1095,24 @@
                 04868-22/23-Б-ЗД
             </span>
                                         </div>
-                                        <div class="course-card__title text20 semi-bold-text">
+                                        <a href="" class="course-card__title text20 semi-bold-text">
                                             Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                        </div>
+                                        </a>
                                         <div class="text20 gray70-text">
                                             Дополнительное образование и внеурочная деятельность детей
                                         </div>
                                     </div>
-                                </a>
+                                    <div class="card-nav">
+                                        <a href="" class="m-btn m-btn-text">
+                                            <span>Подробнее</span>
+                                        </a>
+                                        <a href="" class="m-btn m-btn-primary">
+                                            <span>Подать заявку</span>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <a href="" class="course-card">
+                                <div class="course-card m-card ">
                                     <div class="course-card__top">
                                         <div class="course-card__img">
                                             <img src="img/course2.webp" alt="">
@@ -1112,16 +1143,24 @@
                 04868-22/23-Б-ЗД
             </span>
                                         </div>
-                                        <div class="course-card__title text20 semi-bold-text">
+                                        <a href="" class="course-card__title text20 semi-bold-text">
                                             Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                        </div>
+                                        </a>
                                         <div class="text20 gray70-text">
                                             Дополнительное образование и внеурочная деятельность детей
                                         </div>
                                     </div>
-                                </a>
+                                    <div class="card-nav">
+                                        <a href="" class="m-btn m-btn-text">
+                                            <span>Подробнее</span>
+                                        </a>
+                                        <a href="" class="m-btn m-btn-primary">
+                                            <span>Подать заявку</span>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <a href="" class="course-card">
+                                <div class="course-card m-card ">
                                     <div class="course-card__top">
                                         <div class="course-card__img">
                                             <img src="img/course.webp" alt="">
@@ -1152,16 +1191,24 @@
                 04868-22/23-Б-ЗД
             </span>
                                         </div>
-                                        <div class="course-card__title text20 semi-bold-text">
+                                        <a href="" class="course-card__title text20 semi-bold-text">
                                             Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                        </div>
+                                        </a>
                                         <div class="text20 gray70-text">
                                             Дополнительное образование и внеурочная деятельность детей
                                         </div>
                                     </div>
-                                </a>
+                                    <div class="card-nav">
+                                        <a href="" class="m-btn m-btn-text">
+                                            <span>Подробнее</span>
+                                        </a>
+                                        <a href="" class="m-btn m-btn-primary">
+                                            <span>Подать заявку</span>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <a href="" class="course-card">
+                                <div class="course-card m-card ">
                                     <div class="course-card__top">
                                         <div class="course-card__img">
                                             <img src="img/course2.webp" alt="">
@@ -1192,14 +1239,22 @@
                 04868-22/23-Б-ЗД
             </span>
                                         </div>
-                                        <div class="course-card__title text20 semi-bold-text">
+                                        <a href="" class="course-card__title text20 semi-bold-text">
                                             Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                        </div>
+                                        </a>
                                         <div class="text20 gray70-text">
                                             Дополнительное образование и внеурочная деятельность детей
                                         </div>
                                     </div>
-                                </a>
+                                    <div class="card-nav">
+                                        <a href="" class="m-btn m-btn-text">
+                                            <span>Подробнее</span>
+                                        </a>
+                                        <a href="" class="m-btn m-btn-primary">
+                                            <span>Подать заявку</span>
+                                        </a>
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="courses__more">

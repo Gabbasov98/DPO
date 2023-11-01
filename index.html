@@ -37,7 +37,7 @@
                         <div class="menu__content">
                             <div class="global-search">
                                 <fieldset class="global-search__field">
-                                    <input type="text" placeholder="Название курса, шифр, направление, специальность" data-placeholder="Название курса, шифр, направление, специальность" data-placeholder2="Поиск">
+                                    <input type="text" placeholder="@@placeholder" data-placeholder="@@placeholder" data-placeholder2="Поиск">
                                     <img class="global-search__icon" src="img/search-icon.svg" alt="">
                                     <button class="global-search__clear">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -342,6 +342,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="" class="nav__link m-btn m-btn-line _hide-desktop">
+                                    <span>Версия для слабовидящих</span>
+                                </a>
                             </nav>
                         </div>
 
@@ -690,7 +693,7 @@
 
             <section class="banner _section">
                 <div class="container">
-                    <div class="banner-slider slider">
+                    <div class="banner-slider slider" data-loop="true">
                         <div class="slider__wrap">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
@@ -737,7 +740,7 @@
                         Популярные курсы
                     </div>
                     <div class="popular-courses__items grid-column2 grid-full-mob">
-                        <a href="" class="course-card">
+                        <div class="course-card m-card ">
                             <div class="course-card__top">
                                 <div class="course-card__img">
                                     <img src="img/course.webp" alt="">
@@ -768,16 +771,24 @@
                 04868-22/23-Б-ЗД
             </span>
                                 </div>
-                                <div class="course-card__title text20 semi-bold-text">
+                                <a href="" class="course-card__title text20 semi-bold-text">
                                     Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                </div>
+                                </a>
                                 <div class="text20 gray70-text">
                                     Дополнительное образование и внеурочная деятельность детей
                                 </div>
                             </div>
-                        </a>
+                            <div class="card-nav">
+                                <a href="" class="m-btn m-btn-text">
+                                    <span>Подробнее</span>
+                                </a>
+                                <a href="" class="m-btn m-btn-primary">
+                                    <span>Подать заявку</span>
+                                </a>
+                            </div>
+                        </div>
 
-                        <a href="" class="course-card">
+                        <div class="course-card m-card ">
                             <div class="course-card__top">
                                 <div class="course-card__img">
                                     <img src="img/course2.webp" alt="">
@@ -808,14 +819,22 @@
                 04868-22/23-Б-ЗД
             </span>
                                 </div>
-                                <div class="course-card__title text20 semi-bold-text">
+                                <a href="" class="course-card__title text20 semi-bold-text">
                                     Организация деятельности учащихся, ориентированная на обеспечение информационной безопасности в сети интернет
-                                </div>
+                                </a>
                                 <div class="text20 gray70-text">
                                     Дополнительное образование и внеурочная деятельность детей
                                 </div>
                             </div>
-                        </a>
+                            <div class="card-nav">
+                                <a href="" class="m-btn m-btn-text">
+                                    <span>Подробнее</span>
+                                </a>
+                                <a href="" class="m-btn m-btn-primary">
+                                    <span>Подать заявку</span>
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
