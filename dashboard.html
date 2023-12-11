@@ -699,6 +699,313 @@
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 
+    <script>
+        function columnChart(id) {
+            let colors = ['#02A0FC', "#34B53A"]
+            let options = {
+                series: [{
+                    name: 'Все учителя',
+                    data: [6, 7, 2.5, 7, 5, 7.5]
+                }, {
+                    name: 'Учителя начальной школы',
+                    data: [5.8, 5.6, 9, 3, 4.5, 6.5]
+                }],
+                chart: {
+                    fontFamily: 'Futura New, Arial, sans-serif',
+                    type: 'bar',
+                    height: 220,
+                    toolbar: {
+                        show: false
+                    }
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: false,
+                        columnWidth: '55%',
+                        endingShape: 'rounded'
+                    },
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    show: true,
+                    width: 2,
+                    colors: ['transparent']
+                },
+                xaxis: {
+                    categories: ['2017-18', '2018-19', '2019-20', '2020-21', '2021-22', '2022-23'],
+                    axisTicks: {
+                        show: false,
+                    },
+                    labels: {
+                        style: {
+                            colors: ["#737791"],
+                        }
+                    }
+                },
+                yaxis: {
+                    title: {
+                        text: ''
+                    },
+                    labels: {
+                        align: 'left',
+                        formatter: (value) => {
+                            return value + "%"
+                        },
+                        style: {
+                            colors: ["#737791"],
+                        }
+                    }
+                },
+                fill: {
+                    opacity: 1,
+                    colors: colors
+                },
+                legend: {
+                    fontSize: '12px',
+                    markers: {
+                        fillColors: colors,
+                        radius: 100,
+                        width: 8,
+                        height: 8,
+                    }
+                },
+                tooltip: {
+                    y: {
+                        formatter: function(val) {
+                            return val + " %"
+                        }
+                    }
+                },
+                grid: {
+                    show: true,
+                    borderColor: '#EFF1F3',
+                    xaxis: {
+                        lines: {
+                            show: false
+                        }
+                    },
+                    yaxis: {
+                        lines: {
+                            show: true
+                        }
+                    },
+                }
+
+            };
+
+            let chart = new ApexCharts(document.querySelector(id), options);
+            chart.render();
+        }
+
+
+        columnChart("#resources-chart")
+
+        function columnChart2(id) {
+            let colors = ['#4339F2', "#34B53A", "#FFB200"]
+            let options = {
+                series: [{
+                        name: 'ДО',
+                        data: [500, 1000, 1200, 1400, 1600, 1800, 1700, 1850, 2000]
+                    },
+                    {
+                        name: 'Школа',
+                        data: [500, 900, 1000, 1200, 1500, 1700, 1600, 1750, 1400]
+                    },
+                    {
+                        name: 'СПО',
+                        data: [500, 800, 900, 1100, 1400, 1600, 1500, 1650, 1000]
+                    },
+                ],
+                chart: {
+                    fontFamily: 'Futura New, Arial, sans-serif',
+                    type: 'bar',
+                    height: 320,
+                    stacked: true,
+                    toolbar: {
+                        show: false
+                    },
+                    zoom: {
+                        enabled: true
+                    }
+                },
+                plotOptions: {
+                    bar: {
+                        borderRadius: 5,
+                        borderRadiusApplication: 'round',
+                        borderRadiusWhenStacked: 'last',
+                        horizontal: false,
+                        columnWidth: '25%',
+                        colors: {
+                            backgroundBarRadius: 5,
+                        },
+                    },
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    show: true,
+                    width: 2,
+                    colors: ['transparent']
+                },
+                xaxis: {
+                    categories: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+                    axisTicks: {
+                        show: false,
+                    },
+                    labels: {
+                        style: {
+                            colors: ["#737791"],
+                        }
+                    }
+                },
+                yaxis: {
+                    title: {
+                        text: ''
+                    },
+                    labels: {
+                        align: 'left',
+                        formatter: (value) => {
+                            return value
+                        },
+                        style: {
+                            colors: ["#737791"],
+                        }
+                    }
+                },
+                fill: {
+                    opacity: 1,
+                    colors: colors
+                },
+                legend: {
+                    fontSize: '12px',
+                    markers: {
+                        fillColors: colors,
+                        radius: 100,
+                        width: 8,
+                        height: 8,
+                    },
+                    position: 'top',
+                    horizontalAlign: 'left',
+                },
+                tooltip: {
+                    y: {
+                        formatter: function(val) {
+                            return val
+                        }
+                    }
+                },
+                grid: {
+                    show: true,
+                    borderColor: '#EFF1F3',
+                    xaxis: {
+                        lines: {
+                            show: false
+                        }
+                    },
+                    yaxis: {
+                        lines: {
+                            show: true
+                        }
+                    },
+                }
+
+            };
+
+            let chart = new ApexCharts(document.querySelector(id), options);
+            chart.render();
+        }
+
+
+        columnChart2("#students-chart")
+
+        function pieChart(id) {
+            let colors = ['#FF3A29', "#4339F2", "#34B53A", "#FFB200"]
+            let options = {
+                series: [31.43, 8.64, 25.24, 34.72],
+                labels: [
+                    'Ниже базового',
+                    'Базовый',
+                    'Высокий',
+                    'Повышенный'
+                ],
+                chart: {
+                    fontFamily: 'Futura New, Arial, sans-serif',
+                    type: 'donut',
+                    height: 320,
+                    stacked: true,
+                    toolbar: {
+                        show: false
+                    },
+                    zoom: {
+                        enabled: true
+                    }
+                },
+                plotOptions: {
+                    pie: {
+                        startAngle: -90,
+                        endAngle: 270
+                    }
+                },
+                dataLabels: {
+                    formatter(val, opts) {
+                        const name = opts.w.globals.labels[opts.seriesIndex]
+                        return [val.toFixed(1) + '%']
+                    }
+                },
+                stroke: {
+                    show: true,
+                    width: 2,
+                    colors: ['transparent']
+                },
+                fill: {
+                    opacity: 1,
+                    colors: colors
+                },
+                legend: {
+                    fontSize: '12px',
+                    markers: {
+                        fillColors: colors,
+                        radius: 100,
+                        width: 8,
+                        height: 8,
+                    },
+                    position: 'bottom',
+                    // horizontalAlign: 'left',
+                },
+                tooltip: {
+                    y: {
+                        formatter: function(val) {
+                            return val
+                        }
+                    }
+                },
+                grid: {
+                    show: true,
+                    borderColor: '#EFF1F3',
+                    xaxis: {
+                        lines: {
+                            show: false
+                        }
+                    },
+                    yaxis: {
+                        lines: {
+                            show: true
+                        }
+                    },
+                }
+
+            };
+
+            let chart = new ApexCharts(document.querySelector(id), options);
+            chart.render();
+        }
+
+
+        pieChart("#students-chart2")
+    </script>
 </body>
 
 </html>
